@@ -37,7 +37,7 @@ data$DateTime <- strptime(data$DateTime, format="%Y-%m-%d %H:%M:%S")
 
 png(filename = "plot4.png", width = 480, height = 480, units = "px", bg = "white") 
 
-par(mfrow= c(2, 2), col="black", mar=c(2,2,1,1))
+par(mfrow= c(2, 2), col="black", mar=c(4,4,4,4))
   plot(data$DateTime, data$Global_active_power, xaxt=NULL, xlab = "", ylab = "Global Active Power", type="n") 
   lines(data$DateTime, data$Global_active_power, type="S")
   
